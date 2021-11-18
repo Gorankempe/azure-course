@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "joke"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "joke"
+    }
+  ],
+  "scriptFile": "../dist/gorank-function-get-http-joke/index.js"
+}
